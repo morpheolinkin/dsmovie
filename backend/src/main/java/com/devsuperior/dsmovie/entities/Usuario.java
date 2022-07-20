@@ -7,18 +7,18 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "tb_user")
-public class User {
+@Table(name = "tb_usuario")
+public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String email;
 
-    public User() {
+    public Usuario() {
     }
 
-    public User(Long id, String email) {
+    public Usuario(Long id, String email) {
         this.id = id;
         this.email = email;
     }
